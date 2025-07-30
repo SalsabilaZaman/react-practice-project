@@ -1,11 +1,11 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
 interface AlertProps {
-  message: string;
+  children: ReactNode;
 }
 
-const Alert = ({ message }: AlertProps) => {
-  return <div className="alert alert-primary">{message}</div>;
+const Alert = ({ children }: AlertProps) => {
+  return <div className="alert alert-primary">{children}</div>;
 };
 
 export default Alert;
