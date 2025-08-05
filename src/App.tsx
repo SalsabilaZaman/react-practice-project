@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       {/* <Alert>This is an alert message!<h1>ALERT! Muhahaha</h1></Alert> */}
-      <Button />
+      <Button color="danger" onClick={() => console.log("Button Clicked")}>
+        Click Me!
+      </Button>
     </div>
   );
 }
